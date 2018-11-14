@@ -15,5 +15,3 @@ data class Project(
         val date: String,
         val meetings: List<Meeting>?
 )
-
-
