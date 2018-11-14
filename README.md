@@ -18,7 +18,7 @@ Run the application and send snippets from [sample_data](sample_data) via `curl`
 
 `POST /project/`
 
-Validates a `ProjectRequest` before attempting to store a `Project`  
+### Validates a `ProjectRequest` before attempting to store a `Project`  
 
 `POST /project/valid`
 
