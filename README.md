@@ -22,12 +22,5 @@ Run the application and send snippets from [sample_data](sample_data) via `curl`
 
 `POST /project/valid`
 
-E.g. from the `sample_data` directory:
+Usage examples in the [sample_data](sample_data)  directory.
 
-```
-curl -vX GET --header 'Accept: application/json' 'http://localhost:8080/project/'
-
-curl -vX POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d @projects.json 'http://localhost:8080/project/batch'
-
-curl -vX POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d @invalid.json 'http://localhost:8080/project/valid'
-```
