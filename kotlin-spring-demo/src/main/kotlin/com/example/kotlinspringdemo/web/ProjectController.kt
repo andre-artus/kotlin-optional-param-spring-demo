@@ -21,7 +21,7 @@ class ProjectController(val projectService: ProjectService) {
     fun getProjects() = projectService.findAll()
 
     @PostMapping("/")
-    fun createProject(@Valid @RequestBody project: Project): Project = projectService.createProject(project)
+    fun createProject(@RequestBody project: Project): Project = projectService.createProject(project)
 
     @PostMapping("/valid")
     fun createValidProject(@RequestBody projectRequest: ProjectRequest): ResponseEntity<Project> {
